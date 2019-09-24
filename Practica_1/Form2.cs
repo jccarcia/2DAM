@@ -34,5 +34,11 @@ namespace Practica_1
             Form3 formulario = new Form3(p1);
             formulario.Show();
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Form4 formulario = new Form4(p1);
+            formulario.Show();
+        }
     }
 }
