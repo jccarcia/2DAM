@@ -5,18 +5,18 @@ public class Persona
     //Atributos de la clase Persona
     private String dni, nombre, apellidos;
     private DateTime fechanaci;
-    private String peso, altura;
+    private decimal peso, altura;
 
     //Getters y Setters de los atributos
     public string Dni { get => dni; set => dni = value; }
     public string Nombre { get => nombre; set => nombre = value; }
     public string Apellidos { get => apellidos; set => apellidos = value; }
-    public String Peso { get => peso; set => peso = value; }
-    public String Altura { get => altura; set => altura = value; }
+    public decimal Peso { get => peso; set => peso = value; }
+    public decimal Altura { get => altura; set => altura = value; }
     public DateTime Fechanaci { get => fechanaci; set => fechanaci = value; }
 
     //Constructor con parametros
-    public Persona(string dni, string nombre, string apellido, DateTime fechanaci, String peso, String altura)
+    public Persona(string dni, string nombre, string apellido, DateTime fechanaci, decimal peso, decimal altura)
     {
         this.Dni = dni;
         this.Nombre = nombre;

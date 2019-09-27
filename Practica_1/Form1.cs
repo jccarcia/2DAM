@@ -21,11 +21,15 @@ namespace Practica_1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            //int x = 0;
-            Persona x = new Persona(tb3.Text, tb1.Text, tb2.Text, dtp1.Value, tb5.Text, tb6.Text);
+            
+            Persona x = new Persona(tb3.Text, tb1.Text, tb2.Text, dtp1.Value, num1.Value, num2.Value);
             p1.Add(x);
             MessageBox.Show("Datos insertados");
-            //x = x + 1;
+            tb1.Text = "";
+            tb2.Text = "";
+            tb3.Text = "";
+            num1.Value = 0;
+            num2.Value = 0;
         }
     }
 }

@@ -10,43 +10,39 @@ using System.Windows.Forms;
 
 namespace Practica_1
 {
-    public partial class Form4 : Form
+    public partial class Form5 : Form
     {
         List<Persona> p1;
 
-        public Form4(List<Persona> p)
+        public Form5(List<Persona> p)
         {
             InitializeComponent();
             this.p1 = p;
         }
 
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             tb1.Text = "";
-            tb2.Text = "";
-            if (tb1.Text == "")
+            decimal ex = 0;
+            foreach (Persona p in p1)
             {
-                MessageBox.Show("no ha insertado datos");
-            }
-            else
-            {
-                foreach (Persona p in p1)
+                if (p.Altura > ex)
                 {
-                    if (p.Dni == tb1.Text)
-                    {
-                        tb2.Visible = true;
-                        tb2.Text += p.ToString();
-                    }
+                    ex = p.Altura;
                 }
             }
-
-            tb1.Text = "";
-            
-        }
-
-        private void Tb1_TextChanged(object sender, EventArgs e)
-        {
-
+            foreach (Persona p in p1)
+            {
+                if (p.Altura == ex)
+                {
+                    tb1.Text += p.ToString();
+                }
+            }
         }
     }
 }

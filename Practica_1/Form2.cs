@@ -26,19 +26,31 @@ namespace Practica_1
         private void Bt1_Click(object sender, EventArgs e)
         {
             Form1 formulario = new Form1(p1);
-            formulario.Show();
+            formulario.ShowDialog();
         }
 
         private void Bt2_Click(object sender, EventArgs e)
         {
             Form3 formulario = new Form3(p1);
-            formulario.Show();
+            formulario.ShowDialog();
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             Form4 formulario = new Form4(p1);
-            formulario.Show();
+            formulario.ShowDialog();
+        }
+
+        private void Bt5_Click(object sender, EventArgs e)
+        {
+            Form5 formulario = new Form5(p1);
+            formulario.ShowDialog();
+        }
+
+        private void bt4_Click(object sender, EventArgs e)
+        {
+            Form6 formulario = new Form6(p1);
+            formulario.ShowDialog();
         }
     }
 }

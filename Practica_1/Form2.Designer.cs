@@ -39,9 +39,9 @@
             // bt1
             // 
             this.bt1.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt1.Location = new System.Drawing.Point(219, 103);
+            this.bt1.Location = new System.Drawing.Point(59, 88);
             this.bt1.Name = "bt1";
-            this.bt1.Size = new System.Drawing.Size(187, 58);
+            this.bt1.Size = new System.Drawing.Size(322, 58);
             this.bt1.TabIndex = 0;
             this.bt1.Text = "Insertar Persona";
             this.bt1.UseVisualStyleBackColor = true;
@@ -50,9 +50,9 @@
             // bt2
             // 
             this.bt2.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt2.Location = new System.Drawing.Point(423, 103);
+            this.bt2.Location = new System.Drawing.Point(433, 88);
             this.bt2.Name = "bt2";
-            this.bt2.Size = new System.Drawing.Size(187, 58);
+            this.bt2.Size = new System.Drawing.Size(322, 58);
             this.bt2.TabIndex = 1;
             this.bt2.Text = "Mostrar Persona";
             this.bt2.UseVisualStyleBackColor = true;
@@ -61,9 +61,9 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(219, 187);
+            this.button3.Location = new System.Drawing.Point(59, 177);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(187, 58);
+            this.button3.Size = new System.Drawing.Size(322, 58);
             this.button3.TabIndex = 3;
             this.button3.Text = "Consultar DNI";
             this.button3.UseVisualStyleBackColor = true;
@@ -72,29 +72,31 @@
             // bt4
             // 
             this.bt4.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt4.Location = new System.Drawing.Point(423, 187);
+            this.bt4.Location = new System.Drawing.Point(433, 177);
             this.bt4.Name = "bt4";
-            this.bt4.Size = new System.Drawing.Size(187, 58);
+            this.bt4.Size = new System.Drawing.Size(322, 58);
             this.bt4.TabIndex = 2;
             this.bt4.Text = "Mostrar la persona con el nombre más largo";
             this.bt4.UseVisualStyleBackColor = true;
+            this.bt4.Click += new System.EventHandler(this.bt4_Click);
             // 
             // bt5
             // 
             this.bt5.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt5.Location = new System.Drawing.Point(219, 268);
+            this.bt5.Location = new System.Drawing.Point(59, 268);
             this.bt5.Name = "bt5";
-            this.bt5.Size = new System.Drawing.Size(187, 58);
+            this.bt5.Size = new System.Drawing.Size(322, 58);
             this.bt5.TabIndex = 5;
             this.bt5.Text = "Mostrar la persona mas alta";
             this.bt5.UseVisualStyleBackColor = true;
+            this.bt5.Click += new System.EventHandler(this.Bt5_Click);
             // 
             // bt6
             // 
             this.bt6.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt6.Location = new System.Drawing.Point(423, 268);
+            this.bt6.Location = new System.Drawing.Point(433, 268);
             this.bt6.Name = "bt6";
-            this.bt6.Size = new System.Drawing.Size(187, 58);
+            this.bt6.Size = new System.Drawing.Size(322, 58);
             this.bt6.TabIndex = 4;
             this.bt6.Text = "Salir";
             this.bt6.UseVisualStyleBackColor = true;

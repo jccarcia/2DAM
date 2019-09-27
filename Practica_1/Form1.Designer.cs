@@ -38,13 +38,17 @@
             this.tb1 = new System.Windows.Forms.TextBox();
             this.tb2 = new System.Windows.Forms.TextBox();
             this.tb3 = new System.Windows.Forms.TextBox();
-            this.tb5 = new System.Windows.Forms.TextBox();
-            this.tb6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtp1 = new System.Windows.Forms.DateTimePicker();
+            this.num1 = new System.Windows.Forms.NumericUpDown();
+            this.num2 = new System.Windows.Forms.NumericUpDown();
+            this.KG = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -134,20 +138,6 @@
             this.tb3.Size = new System.Drawing.Size(299, 22);
             this.tb3.TabIndex = 9;
             // 
-            // tb5
-            // 
-            this.tb5.Location = new System.Drawing.Point(272, 185);
-            this.tb5.Name = "tb5";
-            this.tb5.Size = new System.Drawing.Size(299, 22);
-            this.tb5.TabIndex = 11;
-            // 
-            // tb6
-            // 
-            this.tb6.Location = new System.Drawing.Point(272, 213);
-            this.tb6.Name = "tb6";
-            this.tb6.Size = new System.Drawing.Size(299, 22);
-            this.tb6.TabIndex = 10;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -187,6 +177,52 @@
             this.dtp1.Size = new System.Drawing.Size(299, 22);
             this.dtp1.TabIndex = 16;
             // 
+            // num1
+            // 
+            this.num1.DecimalPlaces = 2;
+            this.num1.Location = new System.Drawing.Point(272, 184);
+            this.num1.Maximum = new decimal(new int[] {
+            30000,
+            0,
+            0,
+            0});
+            this.num1.Name = "num1";
+            this.num1.Size = new System.Drawing.Size(184, 22);
+            this.num1.TabIndex = 17;
+            // 
+            // num2
+            // 
+            this.num2.DecimalPlaces = 2;
+            this.num2.Location = new System.Drawing.Point(272, 212);
+            this.num2.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+            this.num2.Name = "num2";
+            this.num2.Size = new System.Drawing.Size(184, 22);
+            this.num2.TabIndex = 18;
+            // 
+            // KG
+            // 
+            this.KG.AutoSize = true;
+            this.KG.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.KG.Location = new System.Drawing.Point(462, 186);
+            this.KG.Name = "KG";
+            this.KG.Size = new System.Drawing.Size(38, 17);
+            this.KG.TabIndex = 19;
+            this.KG.Text = "Kilos";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(462, 214);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 17);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Metros";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -194,16 +230,18 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(711, 450);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.KG);
+            this.Controls.Add(this.num2);
+            this.Controls.Add(this.num1);
             this.Controls.Add(this.dtp1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tb5);
             this.Controls.Add(this.tb1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tb6);
             this.Controls.Add(this.tb2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
@@ -213,6 +251,8 @@
             this.Text = "Registro";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,12 +269,14 @@
         private System.Windows.Forms.TextBox tb1;
         private System.Windows.Forms.TextBox tb2;
         private System.Windows.Forms.TextBox tb3;
-        private System.Windows.Forms.TextBox tb5;
-        private System.Windows.Forms.TextBox tb6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dtp1;
+        private System.Windows.Forms.NumericUpDown num1;
+        private System.Windows.Forms.NumericUpDown num2;
+        private System.Windows.Forms.Label KG;
+        private System.Windows.Forms.Label label8;
     }
 }
 
